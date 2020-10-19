@@ -159,7 +159,8 @@ L<Pod::Headings>
 =head1 SUPPORT
 
 This module is managed in an open GitHub repository,
-(( link here )) Feel free to fork and contribute, or to clone and send patches.
+L<https://github.com/lindleyw/Pod-Definitions>. Feel free to fork and
+contribute, or to clone and send patches.
 
 =head1 AUTHOR
 
