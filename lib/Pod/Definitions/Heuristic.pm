@@ -1,7 +1,7 @@
 package Pod::Definitions::Heuristic;
 
 use Pod::Headings;
-our $VERSION = '0.01';
+our $VERSION = '0.03';
 
 use v5.20;
 
