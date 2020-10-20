@@ -1,9 +1,12 @@
 package Pod::Definitions;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use strict;
 use warnings;
+
+use v5.20;
+
 use feature 'signatures';
 no warnings 'experimental::signatures';
 

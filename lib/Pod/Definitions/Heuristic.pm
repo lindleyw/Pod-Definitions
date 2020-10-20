@@ -3,6 +3,8 @@ package Pod::Definitions::Heuristic;
 use Pod::Headings;
 our $VERSION = '0.01';
 
+use v5.20;
+
 use strict;
 use warnings;
 use feature 'signatures';

@@ -3,6 +3,8 @@ package Pod::Headings;
 use strict;
 use warnings;
 
+use v5.20;
+
 use Pod::Simple;
 our @ISA = qw(Pod::Simple);
 our $VERSION = '0.01';
