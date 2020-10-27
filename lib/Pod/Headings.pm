@@ -7,7 +7,7 @@ use v5.20;
 
 use Pod::Simple;
 our @ISA = qw(Pod::Simple);
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use feature 'signatures';
 no warnings 'experimental::signatures';
