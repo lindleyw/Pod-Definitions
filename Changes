@@ -1,5 +1,9 @@
 {{$NEXT}}
 
+  - Maintain sequence numbers.
+  - Pass entire attribute reference (including sequence number) to
+    handlers.
+
 0.02      2020-10-20 11:55:21 EDT
 
   - Specify Perl v5.20 so Signatures will work. 
