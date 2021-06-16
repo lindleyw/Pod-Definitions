@@ -109,13 +109,13 @@ element, with four arguments:
 
 =over
 
-=item * A reference to the calling parser object
+=item A reference to the calling parser object
 
-=item * The name of the element
+=item The name of the element
 
-=item * The attributes of the element (from its opening)
+=item The attributes of the element (from its opening)
 
-=item * The entire plaintext contained in the element
+=item The entire plaintext contained in the element
 
 =back
 

@@ -163,8 +163,8 @@ top-level (head1) headings, and the names of the functions, methods,
 events, or such as documented therein.
 
 Heading names, presumed to be written in the English language, are
-simplifed for indexing purposes. (See L<Pod::Headings::Heuristic> for
-details.)  For example:
+simplifed for indexing purposes. (See L<Pod::Definitions::Heuristic>
+for details.)  For example:
 
     What is the Q function?               -> Q function
     How can I blip the blop?              -> Blip the blop
@@ -185,7 +185,7 @@ above) is mostly left for the caller to handle.
 
 Creates a new object of type Pod::Definitions
 
-=head2 parse_file ($filename)
+=head2 parse_file ( FILENAME )
 
 Parse a podfile, or Perl source file. Returns the Pod::Headings
 object, which, as a subclass of Pod::Simple, may give various useful
@@ -209,12 +209,40 @@ Module leaf name (e.g., 'Path')
 =head2 sections
 
 Hash (with the key being the toplevel section, e.g., "FUNCTIONS") of
-arrays of section names, or undef if no sections (other than the
-standard NAME and SEE ALSO) were given in the Pod file
+arrays of section information hashes.  If no sections (other than the
+standard NAME and SEE ALSO) were given in the Pod file, C<sections>
+will be undef.
+
+Section information hashes contain the following:
+
+=over
+
+=item raw
+
+The text of the heading as it occurs in the source file
+
+=item cooked
+
+The 'cleaned' text of the heading, from L<Pod::Definitions::Heuristic>
+
+=item sequence
+
+The sequential number of the heading, from L<Pod::Headings>
+
+=item link
+
+The C<manpage> value of the file
+
+=item link_fragment
+
+The heading text, converted to an href compatible with
+metacpan and other displays.
+
+=back
 
 =head1 SEE ALSO
 
-L<Pod::Simple>, L<Pod::Headings>
+L<Pod::Simple>, L<Pod::Headings>, L<Pod::Definitions::Heuristic>
 
 =head1 SUPPORT
 
@@ -225,6 +253,6 @@ contribute, or to clone and send patches.
 =head1 AUTHOR
 
 This module was written and is maintained by William Lindley
-<wlindley@cpan.org>.
+E<lt>wlindley@cpan.orgE<gt>.
 
 =cut
